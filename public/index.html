@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Links Wikipedia Europe</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>Links of Wikipedia Europe</h1>
-    <ul id="links"></ul>
+    <article class="container-fluid">
+      <header class="row">
+        <div class="wk-affix">
+            <h1 class="col-12"> 
+              Links of 
+              <small class="text-muted">Wikipedia Europe</small>
+            </h1>
+        </div>
+      </header>
+
+      <div class="wk-u-margin-top--header"></div>
+      
+      <div class="row">
+          <div id="load" class="wk-load-page hide">
+            <img src="https://ths.azureedge.net/img/carregando.svg" alt="loading">
+          </div>
+        <ul class="list-group" id="links"></ul>
+      </div>
+    </article>
+    
   </body>
   
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>

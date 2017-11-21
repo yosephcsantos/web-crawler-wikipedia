@@ -12,7 +12,7 @@ const anchorElement = 'a[href^="/wiki/"]';
 // IndexJs config
 let linkListStoreMain = [];
 let level = 0;
-let limitRequestsByLevel = 100;
+let limitRequestsByLevel = 50;
 
 // Database config
 var firebase = require('firebase-admin');
@@ -102,10 +102,9 @@ let crawler = new Crawler({
         
         if(error) { console.log(error); return;}
         
-        
         if(level <= limitRequestsByLevel) {
             readLink(response, linkListStore);
-        } else {return;}
+        } else { return; }
         
         readLinkNext(linkListStore);       
         
