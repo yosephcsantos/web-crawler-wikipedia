@@ -42,5 +42,6 @@ After this command the links will be populate again on database.
 
 So, run the command ```$npm start``` and acess http://localhost:8080/
 
-
+## Unit test
+Just run command ```$npm test```
 
