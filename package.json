@@ -1,7 +1,9 @@
 {
   "scripts": {
     "start": "http-server",
-    "test": "karma start karma.conf.js"
+    "build": "node public/js/index.js",
+    "test": "karma start karma.conf.js",
+    "delete-db": "node public/js/delete-database.js"
   },
   "dependencies": {
     "crawler": "^1.1.1",
