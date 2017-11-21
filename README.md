@@ -31,15 +31,12 @@
         
 ## Firebase data
 [Access database](https://console.firebase.google.com/project/wikipedia-link/database/wikipedia-link/data)
-Do you have acess to delete all data and populate again.
+Do you have access to delete all data and populate again.
 
 #### How?
 [Access database](https://console.firebase.google.com/project/wikipedia-link/database/wikipedia-link/data)
-Delete links data.
-
-Run the command ```$node public/js/index.js```
-After this command the links will be populate again on database.
-
+1. Delete all data on database with this command: ```$ npm run delete-db```
+2. Run the command ```$npm run build``` to populate on database.
 So, run the command ```$npm start``` and acess http://localhost:8080/
 
 ## Unit test
